@@ -40,9 +40,7 @@ Lavori autonomi
 Tutorial
 
 Benvenuti! Questo è il vosto primo passo nel mondo della programmazione!
-Forse non è proprio il primo passo nel mondo dei computer, magari siete già dei super mega esperti e fate un sacco di cose.
-
-Però sono piuttosto sicuro che oggi farete delle cose abbastanza nuove, che vi entusiasmeranno!
+Forse non è proprio il primo passo nel mondo dei computer, magari siete già dei super mega esperti e fate un sacco di cose... però sono piuttosto sicuro che oggi farete delle cose abbastanza nuove, che vi entusiasmeranno!
 
 Quello che faremo oggi è scoprire come è fatta Internet.
 
