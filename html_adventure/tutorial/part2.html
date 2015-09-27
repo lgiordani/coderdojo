@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Stylish Portfolio - Start Bootstrap Theme</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="css/stylish-portfolio.css" rel="stylesheet">
+
+    <!-- Custom Fonts -->
+    <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+        <![endif]-->
+
+    </head>
+
+    <body>
+
+        <!-- Navigation -->
+        <a id="menu-toggle" href="#" class="btn btn-dark btn-lg toggle"><i class="fa fa-bars"></i></a>
+        <nav id="sidebar-wrapper">
+            <ul class="sidebar-nav">
+                <a id="menu-close" href="#" class="btn btn-light btn-lg pull-right toggle"><i class="fa fa-times"></i></a>
+                <li class="sidebar-brand">
+                    <a href="#top"  onclick = $("#menu-close").click(); >Start Bootstrap</a>
+                </li>
+                <li>
+                    <a href="#top" onclick = $("#menu-close").click(); >Home</a>
+                </li>
+                <li>
+                    <a href="#about" onclick = $("#menu-close").click(); >About</a>
+                </li>
+                <li>
+                    <a href="#services" onclick = $("#menu-close").click(); >Services</a>
+                </li>
+                <li>
+                    <a href="#portfolio" onclick = $("#menu-close").click(); >Portfolio</a>
+                </li>
+                <li>
+                    <a href="#contact" onclick = $("#menu-close").click(); >Contact</a>
+                </li>
+            </ul>
+        </nav>
+
+        <!-- Callout -->
+        <aside class="callout intro">
+            <div class="text-vertical-center">
+                <h1>Introduzione</h1>
+            </div>
+        </aside>
+
+        <section id="portfolio" class="portfolio">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2 text-center">
+                        <div class="row">
+                            <p>
+                            Per seguire questo tutorial dobbiamo chiudere le pagine dell'editor che abbiamo aperto, cliccando la crocetta a lato del titolo della scheda. Poi dobbiamo aprire un progetto, ovvero un insieme di file che abbiamo già preparato per voi, giusto per evitarvi di dover passare la giornata a scrivere nell'editor! Siamo o non siamo bravi?
+</p>
+<p class="action">
+Una volta chiusi tutti i file selezionate <b>Packages -> Project Manager -> List Projects</b> e nel menu che si apre selezionate "blablabla". Vedrete comparire a sinistra una serie file che useremo. Ecco come si presenterà l'editor.
+</p>
+
+                <img class="img-portfolio img-responsive" src="img/placeholder.jpg" />
+
+
+<p>
+Nel primo esercizio abbiamo incontrato l'HTML, il "linguaggio a marcatori per gli ipertesti". Urca, urca, attenzione. Beh, <b>linguaggio</b> abbiamo capito cosa significa, in pratica è un insieme astruso di parole e simboli che fanno fare qualcosa al computer. I <b>marcatori</b> sono proprio gli elementi del linguaggio, quei nomi strani circondati dalle parentesi appuntite. Ma questi <b>ipertesti</b>? Niente di complesso, li usiamo tutti i giorni. Gli ipertesti sono dei testi collegati tra loro. Avete presente quando cliccate un <b>link</b> su Internet? Link per l'appunto significa <i>collegamento</i> ed ecco fatto! Tutta Internet è un gigantesco ipertesto.
+</p>
+
+<p>
+Ma come si fanno i link? Facciamone subito uno, così impariamo in quattro e quattr'otto. Apriamo il file <code>01.html</code>. Come vedete è molto simile al file su cui abbiamo lavorato nel primo esercizio, solo che qui c'è un po' più di testo. Leggetelo pure, così cominciamo ad immedesimarci nel gioco. Vorremmo che alla fine di questo testo il giocatore possa muoversi verso un'altra pagina, facendo procedere la storia. Quest'altra parte della storia è nel file <code>02.html</code>.
+</p>
+
+<p class="action">
+Per collegare i due file aggiungiamo alla fine del file <code>01.html</code> (attenzione, prima del tag <code>&lt/body&gt</code>) il codice <code>&lta href="02.html"&gtVai avanti&lt/a&gt</code>
+</p>
+
+<p>
+Dovrebbe risultare una cosa così
+</p>
+
+                <img class="img-portfolio img-responsive" src="img/placeholder.jpg" />
+
+<p>
+Ricordatevi che esiste l'autocompletamento con TAB, scrivete <code>a</code> e via! Se avete chiuso anche l'anteprima HTML riattivatela con blablabla.
+</p>
+
+<p>
+Cosa succede nell'anteprima? È spuntato fuori un link, e quando lo cliccate... zac! Eccoci alla pagina <code>02.html</code>! Mmmmm, ne siamo sicuri? Beh, apriamo il file <code>02.html</code> cliccando sul suo nome nella colonna a sinistra e guardiamoci dentro. Mi sembra proprio lui, no?
+</p>
+
+<p>
+Accidenti, c'è un problema! Come facciamo a tornare alla pagina 1? La pagina 2 non contiene alcun link, ci siamo persi nella foresta di Internet! Aiuuuuuutooooo!
+</p>
+
+<p>
+Calma, calma. Noi sappiamo come fare un link, no? Quindi inseriamo nella pagina 2 un link alla pagina 1, esattamente come abbiamo fatto prima. Attenzione ad inserire il link prima del tag di chiusura <code>&lt/body&gt</code>.
+</p>
+
+<p>
+L'anteprima dell'editor con i link non funziona perfettamente, quindi per controllare che tutto sia giusto vale la pena di usare il browser. Aprite il brower e caricate la vostra pagina (c'è nei segnalibri!). Comunque, nella pagina del codice di "02.html" cliccate con il tasto destro e scegliete "Preview HTML" si aprirà un'altra anteprima con il nuovo link in bella vista.
+
+Ottimo, ora possiamo andare avanti e indietro tra le nostre due pagine!
+
+Mettiamo che una pagina debba avere più di un link, è possibile metterne due, ad esempio? Prova a mettere nella pagina 1 un link alla pagina "03.html", e metti il testo "Vai in fondo". Cosa succede? È possibile mettere su due righe?
+
+Come avete visto anche se mettete i tag "<a>" su righe diverse l'HTML se ne infischia e li mette uno dietro l'altro! Le uniche cose che stanno su due righe diverse in HTML sono i paragrafi. Quindi forse è possibile mettere un link dentro un paragrafo? È possibile mettere un tag dentro l'altro? Proviamo e vediamo cosa succede!
+                        </div>
+                    </div>
+                    <!-- /.col-lg-10 -->
+                </div>
+                <!-- /.row -->
+            </div>
+            <!-- /.container -->
+        </section>
+
+        <!-- Call to Action -->
+        <aside class="call-to-action bg-primary">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12 text-center">
+                        <h3>Decidi cosa fare ora (consiglio il tasto di sinistra).</h3>
+                        <a href="part1.html" class="btn btn-lg btn-light">Sono pronto! Portami alla prima parte!</a>
+                        <a href="index.html" class="btn btn-lg btn-dark">Ho paura, torna all'inizio...</a>
+                    </div>
+                </div>
+            </div>
+        </aside>
+
+        <!-- Footer -->
+        <footer>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-10 col-lg-offset-1 text-center">
+                        <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-sa/4.0/88x31.png" /></a><br />This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Attribution-ShareAlike 4.0 International License</a>.
+                        <p class="text-muted">Copyright &copy; CoderDojo MISO 2014</p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+        <!-- jQuery -->
+        <script src="js/jquery.js"></script>
+
+        <!-- Bootstrap Core JavaScript -->
+        <script src="js/bootstrap.min.js"></script>
+
+        <!-- Custom Theme JavaScript -->
+        <script>
+    // Closes the sidebar menu
+    $("#menu-close").click(function(e) {
+        e.preventDefault();
+        $("#sidebar-wrapper").toggleClass("active");
+    });
+
+    // Opens the sidebar menu
+    $("#menu-toggle").click(function(e) {
+        e.preventDefault();
+        $("#sidebar-wrapper").toggleClass("active");
+    });
+
+    // Scrolls to the selected menu item on the page
+    $(function() {
+        $('a[href*=#]:not([href=#])').click(function() {
+            if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') || location.hostname == this.hostname) {
+
+                var target = $(this.hash);
+                target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+                if (target.length) {
+                    $('html,body').animate({
+                        scrollTop: target.offset().top
+                    }, 1000);
+                    return false;
+                }
+            }
+        });
+    });
+</script>
+
+</body>
+
+</html>
