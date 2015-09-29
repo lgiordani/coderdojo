@@ -211,6 +211,22 @@ hr.small {
     -o-background-size: cover;
 }
 
+.part2 {
+    background: url(../img/cables.jpg) no-repeat center center scroll;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+}
+
+.part3 {
+    background: url(../img/sailing.jpg) no-repeat center center scroll;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+}
+
 /* Portfolio */
 
 .portfolio {
@@ -219,6 +235,13 @@ hr.small {
 
 .portfolio p {
     font-size: 20px;
+    text-align: left;
+    background-color: #ddddee;
+}
+
+.portfolio ul {
+    text-align: left;
+    font-size: 20px;
 }
 
 .portfolio p.action {
@@ -226,6 +249,7 @@ hr.small {
     border-radius: 25px;
     background: #8AC007;
     padding: 20px;
+    text-align: center;
 }
 
 .portfolio pre {
@@ -246,10 +270,10 @@ hr.small {
     margin: 0 auto 10px auto;
 }
 
-.img-portfolio:hover {
+/*.img-portfolio:hover {
     opacity: 0.8;
 }
-
+*/
 /* Call to Action */
 
 .call-to-action {
