@@ -3,7 +3,7 @@ Preparazione dei computer Windows su cui si lavora
 * Browser Firefox
 * Nel browser controllare che sia disponibile la barra degli strumenti di sviluppo (menu -> Sviluppo -> Attiva strumenti)
 * Atom installato (https://atom.io)
-* Atom configurato con blablabla
+* Atom configurato con
     - Gestione progetti
     - HTML preview
 * Una directory contenente il tutorial
@@ -12,7 +12,7 @@ Preparazione dei computer Windows su cui si lavora
     - La pagina iniziale del tutorial con il nome "Tutorial"
     - La pagina part1/index.html con il nome "Parte 1"
     - La pagina part2/01.html con il nome "Parte 2"
-    - La pagina blablabla
+    - Le pagine di partenza per ogni setting
 * Atom con i progetti preconfigurati
     - Parte 2
     - Parte 3 - avventura
