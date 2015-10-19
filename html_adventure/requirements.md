@@ -1,4 +1,4 @@
-Preparazione dei computer Windows su cui si lavora
+Preparazione dei computer su cui si lavora
 
 * Browser Firefox
 * Nel browser controllare che sia disponibile la barra degli strumenti di sviluppo (menu -> Sviluppo -> Attiva strumenti)
