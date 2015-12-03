@@ -9,7 +9,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Stylish Portfolio - Start Bootstrap Theme</title>
+    <title>HTML Adventure v##version## - Parte 2</title>
 
     <!-- Bootstrap Core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
@@ -33,12 +33,12 @@
     <body>
 
         <!-- Callout -->
-        <aside class="callout part2">
+        <header class="header part2">
             <div class="text-vertical-center">
                 <h1>Parte II</h1>
                 <h3>Una questione di collegamenti</h3>
             </div>
-        </aside>
+        </header>
 
         <section id="portfolio" class="portfolio">
             <div class="container">
@@ -46,17 +46,26 @@
                     <div class="col-lg-8 col-lg-offset-2 text-center">
                         <div class="row">
                             <p>
-                                A questo punto devi chiudere le pagine dell'editor che hai aperto, cliccando la crocetta a lato del titolo di ogni scheda. Poi devi aprire un <b>progetto</b>, ovvero un insieme di file che abbiamo già preparato per te, giusto per evitarvi di dover passare la giornata a scrivere nell'editor! Siamo o non siamo bravi?
-                            </p>
-                            <p class="action">
-                                Una volta chiusi tutti i file seleziona <b>Packages -> Project Manager -> List Projects</b> e nel menu che si apre seleziona "Coderdojo HTML". Vedrai comparire a sinistra una serie file che useremo. Ecco come si presenterà l'editor.
-                            </p>
-                            <img class="img-portfolio img-responsive" src="img/placeholder.jpg" />
-                            <p>
                                 Nel primo esercizio abbiamo incontrato l'HTML, il "linguaggio a marcatori per gli ipertesti". Urca, urca, attenzione. Beh, <b>linguaggio</b> abbiamo capito cosa significa, in pratica è un insieme astruso di parole e simboli che fanno fare qualcosa al computer. I <b>marcatori</b> sono proprio gli elementi del linguaggio, i tag, quei nomi strani circondati dalle parentesi appuntite. Ma questi <b>ipertesti</b>? Niente di complesso, li usiamo tutti i giorni. Gli ipertesti sono dei testi collegati tra loro. Avete presente quando cliccate un <b>link</b> su Internet? Link per l'appunto significa <i>collegamento</i> ed ecco fatto! Tutta Internet è un gigantesco ipertesto.
                             </p>
                             <p>
-                                Ma come si fanno i link? Facciamone subito uno, così impariamo in quattro e quattr'otto. Nella barra a sinistra dell'editor apriamo il file <code>01.html</code> nella cartella <code>part2</code>. Come vedi è molto simile al file su cui abbiamo lavorato nel primo esercizio, solo che qui c'è un po' più di testo. Leggetelo pure, così cominciamo ad immedesimarci nel gioco. Vorremmo che alla fine di questo testo il giocatore possa muoversi verso un'altra pagina, facendo procedere la storia. Quest'altra parte della storia è nel file <code>02.html</code>, sempre nella cartella <code>part2</code>. Apri anche quello e guarda il codice.
+                                Ma come si fanno i link? Facciamone subito uno, così impariamo in quattro e quattr'otto. Ma prima... un po' di pulizia!
+                            </p>
+                            <p>
+                                Devi chiudere la pagina dell'editor che hai aperto con il file della prima parte, cliccando la crocetta a lato del titolo. Chiudi anche l'anteprima, sempre con la crocetta. Poi devi aprire un <b>progetto</b>, ovvero un insieme di file che abbiamo già preparato per te, giusto per evitarti di dover passare la giornata a scrivere nell'editor! Siamo o non siamo bravi?
+                            </p>
+                            <p class="action">
+                                Una volta chiusi tutti i file seleziona <b>Packages -> Project Manager -> List Projects</b> e nel menu che si apre seleziona "HTML Adventure Part 2". Vedrai comparire a sinistra una serie file che useremo. Ecco come si presenterà l'editor.
+                            </p>
+                            <img class="img-portfolio img-responsive" src="img/screenshots/Atom_project_part2.jpg" />
+                            <p>
+                                Bene, torniamo ai nostri link. Apriamo il file <code>01.html</code>.
+                            </p>
+                            <p class="action">
+                                Nella barra a sinistra dell'editor clicca una volta sul file <code>01.html</code>
+                            </p>
+                            <p>
+                                Come vedi è molto simile al file su cui abbiamo lavorato nel primo esercizio, solo che qui c'è un po' più di testo. Leggi pure il testo, così cominciamo ad immedesimarci: come vedi in questo gioco il lettore veste i panni di un agente segreto. Vorremmo che alla fine di questo testo il lettore/giocatore possa <b>muoversi verso un'altra pagina</b>, facendo procedere la storia. Quest'altra parte della storia è nel file <code>02.html</code>, apri anche quello e guarda il codice.
                             </p>
                             <p class="action">
                                 Per collegare i due file aggiungiamo alla fine del file <code>01.html</code> (attenzione, prima del tag <code>&lt;/body&gt;</code>) il codice <code>&lt;a href="02.html"&gt;Vai avanti&lt;/a&gt;</code>
@@ -74,10 +83,10 @@
 [...]</pre>
                             </p>
                             <p>
-                                Ricordati che esiste l'autocompletamento con TAB, scrivete <code>a</code> e via! Se avete chiuso anche l'anteprima HTML riattivala con il tasto destro del mouse, selezionando <b>Preview HTML</b> dal menu.
+                                Ricordati che esiste l'autocompletamento con TAB, scrivete <code>a</code> e via! Riattiva l'anteprima (tasto destro del mouse, poi seleziona <b>Preview-Plus</b> dal menu). Cosa è successo nella pagina?
                             </p>
                             <p>
-                                Cosa succede nell'anteprima? È spuntato fuori un link, e quando lo clicchi... zac! Eccoci alla pagina <code>02.html</code>! Mmmmm, ne siamo sicuri? Beh, controlliamo nel file <code>02.html</code> che abbiamo già aperto... sembra proprio lui, no?
+                                È spuntato fuori un link, e quando lo clicchi... zac! Eccoci alla pagina <code>02.html</code>! Mmmmm, ne siamo sicuri? Beh, controlliamo nel file <code>02.html</code> che abbiamo già aperto... sembra proprio lui, no?
                             </p>
                             <p>
                                 Accidenti, c'è un problema! Come facciamo a tornare alla pagina 1? La pagina 2 non contiene alcun link, ci siamo persi nella foresta di Internet! Aiuuuuuutooooo!
@@ -86,13 +95,13 @@
                                 Calma, calma. Noi sappiamo come fare un link, no?
                             </p>
                             <p class="action">
-                                Inserisci nella pagina 2 un link alla pagina 1, esattamente come abbiamo fatto prima. Attenzione ad inserire il link prima del tag di chiusura <code>&lt;/body&gt;</code>.
+                                Inserisci nella pagina 2 un link alla pagina 1, esattamente come abbiamo fatto prima. Attenzione ad inserire il link prima del tag di chiusura <code>&lt;/body&gt;</code>. Suggerimento: copia il tag dal file <code>01.html</code> e cambia le parti necessarie.
                             </p>
                             <p>
-                                L'anteprima dell'editor con i link non funziona perfettamente, quindi per controllare che tutto sia giusto vale la pena di usare il browser.
+                                Ricordati che l'anteprima non si aggiorna automaticamente a meno che non sia attivo il simbolino del fumline. Possiamo a questo punto controllare che tutto funzioni anche nel browser vero e proprio.
                             </p>
                             <p class="action">
-                                Apri il browser e carica la pagina (c'è nella barra dei segnalibri con il nome <b>Parte 2</b>). Ricordati che qui per vedere le modifiche salvate devi premere <b>F5</b>.
+                                Apri il browser e carica la pagina: la trovi come <b>HTML Adventure -> Parte 2</b>. Ricordati che qui per vedere le modifiche salvate devi premere <b>F5</b>.
                             </p>
                             <p>
                                 Ottimo, ora possiamo andare avanti e indietro tra le nostre due pagine!
@@ -100,8 +109,8 @@
                             <p>
                                 Ma... mettiamo che da una pagina ci siano più possibilità di scelta su dove andare. È possibile mettere due link, ad esempio?
                             </p>
-                            <p>
-                                Metti nella pagina 1 un link alla pagina <code>03.html</code> con il testo "Vai in fondo". Cosa succede? È possibile metterlo su due righe diverse?
+                            <p class="action">
+                                Metti nella pagina <code>01.html</code> un link alla pagina <code>03.html</code> con il testo "Vai in fondo". Cosa succede? È possibile metterlo su due righe diverse, per esempio mandando a capo il tag?
                             </p>
                             <p>
                                 Come hai visto anche se metti i tag <code>&lt;a&gt;</code> su righe diverse l'HTML se ne infischia e li mette uno dietro l'altro! Le uniche cose che stanno su due righe diverse in HTML sono i paragrafi (quelli che abbiamo già fatto con il tag <code>&lt;p&gt;</code>). Quindi se fosse possibile mettere un link dentro un paragrafo... È possibile mettere un tag dentro l'altro? Proviamo e vediamo cosa succede!
@@ -119,12 +128,12 @@
 
                             </p>
                             <p>
-                                Controlla un po' sul browser cosa succede... eccoli! I link adesso sono su due righe diverse, perfetto! Quello che abbiamo fatto si chiama <b>nidificare</b> i tag, ovvero metterli uno dentro l'altro, perché il tag esterno diventa come un nido per quello interno (certo che questi programmatori sono gente veramente strana).
+                                Controlla un po' sul browser cosa succede... eccoli! I link adesso sono su due righe diverse, perfetto! Quello che abbiamo fatto si chiama <b>annidare</b> i tag, ovvero metterli uno dentro l'altro, perché il tag esterno diventa come un nido per quello interno (certo che questi programmatori sono gente veramente strana).
                             </p>
                             <hr class="small">
 
                             <p>
-                                Una cosa molto comoda da avere quando si scrivono i testi sono le liste e nel Web ci sono liste ovunque, anche se spesso non ce ne accorgiamo. Ad esempio i menu delle pagine come Facebook o Google, i pulsanti in alto, tutte le mail che ci sono nella casella di posta... tutte liste!
+                                Una cosa molto comoda da avere quando si scrivono i testi sono le <b>liste</b> e nel Web ci sono liste ovunque, anche se spesso non ce ne accorgiamo. Ad esempio i menu delle pagine come Facebook o Google, i pulsanti in alto, tutte le mail che ci sono nella casella di posta... tutte liste!
                             </p>
                             <p>
                                 Cominciamo a vedere una semplice lista. Il tag HTML che useremo è <code>&lt;ul&gt;</code>, dentro il quale metteremo dei tag <code>&lt;li&gt;</code>. Per esempio
@@ -154,11 +163,17 @@
                                 Prova ad aprire il file <code>01.html</code> e a mettere i due link creati precedentemente in una lista. Funziona? È necessario tenere i tag <code>&lt;p&gt;</code> o si possono togliere?
                             </p>
                             <p>
-                                Sarebbe ora di rendere la cosa un po' più bellina graficamente, non ti pare? Aggiungiamo un'immagine! Ne abbiamo preparata una bellissima che si trova nella cartella <code>images</code> dentro la cartella <code>part2</code> del progetto, si chiama <code>adventure.jpg</code>. Atom permette anche di vedere le immagini, quindi se ci clicchi sopra puoi ammirarla subito. Dovrebbe essere questa
+                                Sarebbe ora di rendere la cosa un po' più bellina graficamente, non ti pare? Aggiungiamo un'immagine! Ne abbiamo preparata una bellissima che si trova nella cartella <code>images</code> dentro la cartella <code>part2</code> del progetto, si chiama <code>adventure.jpg</code>. Atom permette anche di vedere le immagini, quindi se ci clicchi sopra puoi ammirarla subito.
+                            </p>
+                            <p class="action">
+                                Vai in Atom e sulla barra a sinistra apri la cartela <code>images</code> e clicca sul file <code>adventure.jpg</code>.
+                            </p>
+                            <p>
+                                Dovrebbe essere questa
                             </p>
                             <img class="img-portfolio img-responsive" src="img/adventure.jpg" />
                             <p>
-                                Per inserirla nalla pagina Web usiamo il tag <code>&lt;img&gt;</code>. Questo è un tag un po' particolare. Vi abbiamo detto prima che tutti i tag HTML vanno aperti e chiusi per poterci mettere dentro un contenuto. Beh ecco, non era proprio tutta tutta la verità.
+                                Per inserirla nalla pagina Web usiamo il tag <code>&lt;img&gt;</code>. Questo è un tag un po' particolare. Ti abbiamo detto prima che tutti i tag HTML vanno aperti e chiusi per poterci mettere dentro un contenuto. Beh ecco, non era proprio tutta tutta la verità.
                             </p>
                             <p>
                                 Il tag <code>img</code> va aperto e chiuso come tutti, ma non ci si mette dentro nulla come contenuto! Il file che contiene l'immagine si mette in quello che si chiama <b>attributo</b>, in particolare l'attributo <code>src</code>. Allora, facciamo un passo alla volta
@@ -175,9 +190,9 @@
 
                             </p>
                             <p>
-                            ma l'HTML ci permette di accorciare la scrittura. Un po' come scrivere "ecc." invece di "eccetera". Adesso la nostra pagina si dovrebbe presentare così
+                            ma l'HTML ci permette di accorciare la scrittura. Un po' come scrivere "ecc." invece di "eccetera". Adesso la nostra pagina si dovrebbe presentare così (a parte i vari link e le liste che hai aggiunto prima)
                             </p>
-                            <img class="img-portfolio img-responsive" src="img/placeholder.jpg" />
+                            <img class="img-portfolio img-responsive" src="img/screenshots/part2_with_image.jpg" />
                             <hr class="small">
                             <p>
                                 Siamo arrivati alla fine anche della seconda parte!!! Beh, allora che ne dici, stiamo imparando delle cose nuove? E devi vedere cosa ci aspetta! Per adesso facciamo un mini riassunto di cosa è successo finora. In questa lezione abbiamo imparato

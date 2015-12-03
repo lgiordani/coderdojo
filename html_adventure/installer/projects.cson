@@ -1,0 +1,5 @@
+htmladventurepart2:
+  title: "HTML Adventure Part 2"
+  paths: [
+    "##base_dir##/part2"
+  ]
