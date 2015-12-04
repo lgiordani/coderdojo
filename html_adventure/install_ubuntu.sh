@@ -75,10 +75,19 @@ echo "        <DD>La prima parte" >> ${bookmarks_file}
 echo "        <DT><A HREF=\"file://${html_adventure_dir}/part2/01.html\">Parte 2</A>" >> ${bookmarks_file}
 echo "        <DD>La seconda parte" >> ${bookmarks_file}
 
+echo "        <DT><A HREF=\"file://${html_adventure_dir}/part3/fantasy/01.html\">Parte 3 - fantasy</A>" >> ${bookmarks_file}
+echo "        <DD>La terza parte" >> ${bookmarks_file}
+
+echo "        <DT><A HREF=\"file://${html_adventure_dir}/part3/scifi/01.html\">Parte 3 - fantascienza</A>" >> ${bookmarks_file}
+echo "        <DD>La terza parte" >> ${bookmarks_file}
+
+echo "        <DT><A HREF=\"file://${html_adventure_dir}/part3/adventure/01.html\">Parte 3 - avventura</A>" >> ${bookmarks_file}
+echo "        <DD>La terza parte" >> ${bookmarks_file}
+
 cat "installer/bookmarks_footer.html" >> ${bookmarks_file}
 
 echo
 echo "Installation succesful"
 echo "You will find everything in the directory ${html_adventure_dir}"
-echo "IMPORT in Firefox the bookmarks file ${bookmarks_file} and move the imported derectory into the bookmark bar."
+echo "IMPORT in Firefox the bookmarks file ${bookmarks_file} and move the imported directory into the bookmark bar."
 echo
