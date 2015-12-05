@@ -38,7 +38,7 @@ mkdir ${html_adventure_dir}
 
 echo
 echo "Copying tutorial files..."
-for i in "tutorial" "part1" "part2"; do
+for i in "tutorial" "part1" "part2" "part3"; do
     cp -R ${i} ${html_adventure_dir}
 done
 

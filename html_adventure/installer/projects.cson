@@ -1,20 +1,20 @@
 htmladventurepart2:
-  title: "HTML Adventure Part 2"
+  title: "HTML Adventure Parte 2"
   paths: [
     "##base_dir##/part2"
   ]
 htmladventurepart3fantasy:
-  title: "HTML Adventure Part 3 - fantasy"
+  title: "HTML Adventure Parte 3 - fantasy"
   paths: [
     "##base_dir##/part3/fantasy"
   ]
 htmladventurepart3scifi:
-  title: "HTML Adventure Part 3 - sci-fi"
+  title: "HTML Adventure Parte 3 - fantascienza"
   paths: [
     "##base_dir##/part3/scifi"
   ]
 htmladventurepart3adventure:
-  title: "HTML Adventure Part 3 - adventure"
+  title: "HTML Adventure Parte 3 - avventura"
   paths: [
     "##base_dir##/part3/adventure"
   ]
