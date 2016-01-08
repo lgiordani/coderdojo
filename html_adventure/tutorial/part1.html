@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>HTML Adventure v##version## - Parte 1</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="css/stylish-portfolio.css" rel="stylesheet">
+
+    <!-- Custom Fonts -->
+    <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+        <![endif]-->
+
+    </head>
+
+    <body>
+
+        <!-- Callout -->
+        <header class="header part1">
+            <div class="text-vertical-center">
+                <h1>Parte I</h1>
+                <h3>Mettiamoci le mani dentro</h3>
+            </div>
+        </header>
+
+        <section id="portfolio" class="portfolio">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2 text-center">
+                        <div class="row">
+                            <p>
+                                Tutti sono abituati ad "andare su Internet". Ma qui siamo tra gente che vuole capire cosa succede, no? Allora noi invece che "andare su Internet", <b>apriamo il browser</b>: il browser (<i>to browse</i>, scorrere, sfogliare) è un programma che serve per "sfogliare" Internet, ed in questo momento stiamo usando <b>Firefox</b>. Ma stavolta, invece che andare su uno dei nostri siti preferiti caricheremo un sito che sta sul nostro computer. Attenzione, questo sito è accessibile solo dal tuo computer, nessuno può vederlo da un altro computer o cellulare. Più avanti potremo fare anche questo però.
+                            </p>
+                            <p class="action">
+                                Nella barra dei segnalibri trovi <b>HTML Adventure</b> e dentro c'è <b>Parte 1</b>, che abbiamo preparato per te. Cliccalo con il tasto destro e seleziona <b>Apri in una nuova scheda</b> e vedrai questo risultato. Poi torna qui, senza chiudere la scheda.
+                            </p>
+                            <img class="img-portfolio img-responsive" src="img/screenshots/part1.jpg" />
+                            <p>
+                                Beh, questa che abbiamo aperto è una <b>pagina Web</b>. Ok, ok, manca di colori, luci, suoni, animazioni, filmati e quant'altro. Ma è una pagina Web, e ora scopriremo cosa ci sta sotto!
+                            </p>
+                            <p>
+                                Cosa usano i programmatori per fare il loro lavoro (e per divertirsi)? Usano un <b>editor</b> (<i>to edit</i>, modificare), ovvero un programma che serve a scrivere il <b>codice</b>. Apriamo il nostro editor e vediamo di cosa si tratta.
+                            </p>
+                            <p class="action">
+                                Clicca sull'icona Atom che sta sul desktop.
+                            </p>
+                            <img class="img-portfolio img-responsive" src="img/screenshots/Atom_welcome.jpg" />
+                            <p>
+                                Eccolo qui, il nostro migliore amico. Atom non è l'unico editor in circolazione, ce ne sono tantissimi! Ed il bello è che uno può scegliere quello che gli piace di più, perché tutti producono la stessa cosa, il codice. Per oggi però useremo quello che abbiamo scelto noi. In futuro sarai libero di fare come vorrai!
+                            </p>
+                            <p class="action">
+                                Da dentro Atom vai nel menu <b>File</b> (in alto a sinistra), cliccalo e scegli <b>Open file...</b> (oppure premi <b>Ctrl+O</b>) e scegli il file <b>##base_dir##/part1/index.html</b>.
+                            </p>
+                            <img class="img-portfolio img-responsive" src="img/screenshots/Atom_two_panes.jpg" />
+                            <p>
+                                Urca! Cos'è questo? Una lingua aliena? Benvenuto, questo che vedi è il linguaggio <b>HTML</b> (che è una sigla che vuol dire <b>HyperText Markup Language</b>, ovvero "linguaggio a marcatori per ipertesti"). Ecco questa è proprio una lingua aliena!!! Calma, calma, una cosa alla volta.
+                            </p>
+                            <p>
+                                Facciamo una citazione utile da un famoso romanzo:
+                            </p>
+                            <p class="quote">
+                                "Non farti prendere dal panico."<br>
+                                <span class="source">Douglas Adams, Guida Galattica per Autostoppisti</span>
+                            </p>
+                            <p>
+                                Rassicurante? Coraggio che con calma si fa tutto.
+                            </p>
+                            <p>
+                                Prima di tutto sistemiamo un poco l'editor, che ci sono troppe cose aperte. Di default Atom apre due pannelli (<i>panes</i>) in parallelo, quindi adesso ne chiudiamo un po'. Vai sulla tab che dice <b>Welcome</b>, clicca con il tasto destro e seleziona <b>Close Pane</b> (chiudi il pannello). Poi clicca con il tasto destro sulla tab che dice <b>index.html</b> e seleziona <b>Close other tabs</b>
+                            </p>
+                            <img class="img-portfolio img-responsive" src="img/screenshots/Atom_close_pane.jpg" />
+                            <p>
+                                Il risultato finale della pulizia dovrebbe somigliare a questo
+                            </p>
+                            <img class="img-portfolio img-responsive" src="img/screenshots/Atom_one_file.jpg" />
+                            <p>
+                                Ora che le cose sono più ordinate torniamo al contenuto nostro file: guarda il codice nell'editor e la pagina che hai aperto nella nuova scheda. C'è qualcosa in comune? Ad esempio vedi quella riga dove dice <code>&lt;h1&gt;La mia avventura&lt;/h1&gt;</code> (alla riga 11)? C'è qualcosa di simile anche nella pagina che hai aperto nel browser? Facciamo così, proviamo a cambiarla e a vedere cosa succede!
+                            </p>
+                            <p class="action">
+                                Muoviti con i tasti freccia o con il mouse sulla quella riga e modifica il testo <b>La mia avventura</b> per farlo diventare <b>La mia prima avventura!</b>, compreso di punto esclamativo, mi raccomando, altrimenti non è abbastanza entusiasmante!
+                            </p>
+                            <p class="action">
+                                Attenzione: se fai un errore, ad esempio se cancelli il testo sbagliato, basta premere <b>Ctrl+Z</b> (anche più volte) per annullare la modifica.
+                            </p>
+                            <p>
+                                Adesso il testo dovrebbe essere così
+                            </p>
+                            <p class="code">
+                                <pre>[...]
+&lt;body&gt;
+    &lt;h1&gt;La mia prima avventura!&lt;/h1&gt;
+
+    &lt;h2&gt;1&lt;/h2&gt;
+[...]</pre>
+                            </p>
+                            <p>
+                                Salviamo il file, altrimenti nessuno saprà mai che abbiamo fatto questa modifica.
+                            </p>
+                            <p class="action">
+                                Salva premendo i tasti <b>Ctrl+S</b> (oppure il menu <b>File > Save</b>).
+                            </p>
+                            <p>
+                                Adesso torniamo nel nostro browser e... accidenti è tutto come prima!!! Certo, niente paura. Il browser non si aggiorna automaticamente, in gergo si dice che non fa il <b>refresh</b> della pagina. Bisogna farlo manualmente, premendo il tasto <b>F5</b>. Ecco qui le nostre modifiche!
+                            </p>
+                            <img class="img-portfolio img-responsive" src="img/screenshots/part1_modified.jpg" />
+                            <p>
+                                Ma insomma, cosa succede dentro tutto questo meccanismo? Molto semplicemente il browser apre il file che gli hai indicato, legge il codice HTML e, siccome lui sa parlare quella lingua, capisce cosa gli viene detto e lo fa. In gergo si dice che il browser fa il <b>rendering</b> della pagina.
+                            </p>
+                            <p>
+                                Quindi qui si tratta di imparare questa lingua (l'HTML) per spiegare al browser cosa deve mostrare. Eccolo qui il segreto che non è più segreto: tutta Internet è scritta in questo linguaggio HTML! Anche questo tutorial!! Beh, non solo in HTML, per esempio ci sono altri due linguaggi che si usano e che si chiamano <b>CSS</b> e <b>JavaScript</b>, li incontreremo più avanti. Per ora stiamo con il nostro nuovo amico HTML.
+                            </p>
+                            <p>
+                                HTML è tutto fatto da degli elementi che si chiamano <b>tag</b>, che in italiano si traduce con "marcatore" (ma tutti dicono tag): ad esempio <code>&lt;h1&gt;</code>, lo abbiamo appena incontrato. Come vedi i tag si aprono (<code>&lt;h1&gt;</code>) e poi si chiudono (<code>&lt;/h1&gt;</code>) e tutto cio che sta dentro è il <b>contenuto del tag</b>. A seconda del nome del tag succede qualcosa al contenuto. Facile, no?
+                            </p>
+                            <p>
+                                Ora che hai capito come funziona il meccanismo fai questa modifica.
+                            </p>
+                            <p class="action">
+                                Torna nel file e cambia il contenuto del tag <code>&lt;h2&gt;</code> da <b>1</b> a <b>Capitolo 1</b>.
+                            </p>
+                            <p>
+                                Ricordati di salvare e poi vai nel browser e fai un refresh. Funziona?
+                            </p>
+                            <hr class="small">
+                            <p>
+                                Come tutte le lingue, anche l'HTML ha le sue regole. Se nel tema di italiano scrivi "Sonno tornato ha casa" probabilmente l'insegnante non sarà molto contento, e mi sa che a casa ci torni veramente, ma con un brutto voto.
+                            </p>
+                            <p>
+                                Ecco, l'HTML ha delle regole, e una molto importante è che <b>i tag aperti vanno chiusi!</b> Fortunatamente l'editor ci aiuta a trovare questi errori, e altrettanto fortunatamente non ci rifila brutti voti! È proprio un valido aiutante, insomma. Se guardi la riga in fondo alla pagina dell'editor (si chiama <i>status bar</i> o barra di stato), vedrai che Atom dice <b>No Issues</b> (nessun problema) in un bel verde rassicurante.
+                            </p>
+                            <img class="img-portfolio img-responsive" src="img/screenshots/Atom_statusbar_no_issues.jpg" />
+                            <p>
+                                Proviamo a vedere cosa succede se facciamo un errore.
+                            </p>
+                            <p class="action">
+                                Vai nel file e cambia il tag <code>&lt;h1&gt;</code> in <code>&lt;h2&gt;</code> (solo questo, lascia <code>&lt;/h1&gt;</code> così com'è). Poi salva.
+                            </p>
+                            <p>
+                                Eccoli lì! I puntini rossi!! Ahi, ahi, qui c'è qualche sbaglio. In basso nella finestra compaiono anche due minacciosi bollini rossi con scritto "error", ma tranquillo, qui non c'è la pagella.
+                            </p>
+                            <img class="img-portfolio img-responsive" src="img/screenshots/Atom_tag_issues.jpg" />
+                            <img class="img-portfolio img-responsive" src="img/screenshots/Atom_statusbar_tag_issues.jpg" />
+                            <p>
+                                Il primo errore dice <b>Tag must be paired, No start tag:[<code>&lt;/h1&gt;</code>] at line 11 col 23</b>. La traduzione di questo minaccioso messaggio è "I tag devono essere accoppiati, non c'è il tag di partenza per <code>&lt;/h1&gt;</code> alla linea 11 colonna 23". Lo sappiamo bene che non c'è il tag di partenza, l'abbiamo cambiato noi! Se noti puoi cliccare sulla parte del messaggio di errore che dice <b>at line 11 col 23</b> e l'editor ti mostrerà esattamente dove sta l'errore. Beh, più o meno, lui non può sapere esattamente cosa intendessi fare, e non sa se hai sbagliato il tag di apertura o di chiusura.
+                            </p>
+                            <img class="img-portfolio img-responsive" src="img/screenshots/Atom_tag_issues_error.jpg" />
+                            <p class="action">
+                                Bene, riportiamo tutto come prima e salviamo. Puoi cambiare nuovamente a mano il tag <code>&lt;h2&gt;</code> in <code>&lt;h1&gt;</code> o premere <b>Ctrl+Z</b> fino a che tutto torna come prima. Poi salva.
+                            </p>
+                            <p>
+                                Come vedi quando salvi tutto torna nella norma. Wow, per fortuna, niente bocciatura! Ora è tempo che impari ad aggiungere qualcosa di tuo.
+                            </p>
+                            <p class="action">
+                                Vai all'inizio della riga dove c'è scritto <code>&lt;/body&gt;</code> (attenzione, dove si chiude, non dove si apre) e inserisci qualche "a capo" (cioè premi <b>Invio</b> un po' di volte) per farci un po' di spazio (quanti ne vuoi, non costano nulla!). Su una delle righe vuote scrivi <code>&lt;p&gt;</code> (ignoriamo per ora il menu che salta fuori, lo useremo tra un attimo), poi scrivi la frase <b>Questo è un nuovo paragrafo</b> e chiudi il tag con <code>&lt;/p&gt;</code>. Salva e fai il refresh dal browser con <b>F5</b>.
+                            </p>
+                            <p>
+                                Otterrai una cosa simile a questa
+                            </p>
+                            <p class="code">
+                                <pre>[...]
+
+&lt;p&gt;Qui inizia la mia avventura!&lt;/p&gt;
+
+&lt;p&gt;Questo è un nuovo paragrafo&lt;/p&gt;
+
+
+&lt;/body&gt;
+[...]</pre>
+                            </p>
+                            <img class="img-portfolio img-responsive" src="img/screenshots/part1_new_paragraph.jpg" />
+                            <p>
+                                Certo che questa storia di salvare e fare il refresh è un po' noiosa! Siccome i programmatori sono gente pigra si inventano mille modi per non fare fatica e in questo caso hanno inventato una cosa che si chiama <b>preview</b> (cioè anteprima).
+                            </p>
+                            <p class="action">
+                                Nell'editor clicca il tasto destro del mouse e seleziona <b>Preview-Plus</b> dal menu.
+                            </p>
+                            <p>
+                                Si aprirà un nuovo pannello con un piccolo browser integrato che ci mostra l'anteprima della pagina. Fantastico! Vorremmo però che questa anteprima si aggiornasse appena salviamo.
+                            </p>
+                            <p class="action">
+                                Clicca il simbolo del fulmine in alto a destra nell'anteprima per attivare il refresh automatico. Per provarlo inserisci nel file un nuovo paragrafo (ad esempio <code>&lt;p&gt;Ancora paragrafi?&lt;/p&gt;</code>) e salva.
+                            </p>
+                            <p>
+                                Funziona? Dovrebbe risultare simile a questo (a parte quello che hai aggiunto tu).
+                            </p>
+                            <img class="img-portfolio img-responsive" src="img/screenshots/Atom_preview.jpg" />
+                            <p>
+                                Però a ben guardare anche tutta la faccenda dei tag è un po' faticosa, tutti quei simboli <code>&gt;</code>, <code>&lt;</code> e <code>/</code> sono difficili da inserire. Chissà se l'editor ci può aiutare. Eccome!
+                            </p>
+                            <p class="action">
+                                Inserisci un nuovo paragrafo, ma ora invece di scrivere <code>&lt;p&gt;</code> scrivi solo <code>p</code>. Vedi che compare un menu? Premi il tasto <b>TAB</b> (quello a fianco alla Q, un tasto importantissimo!) e guarda cosa succede! L'editor ti ha automaticamente inserito il tag di apertura e quello di chiusura. Fantastico, no? Si chiama <b>autocompletamento</b>.
+                            </p>
+                            <p>
+                                Mmmm, ma qui ci sono degli "a capo", come facciamo? Non toglierli!
+                            </p>
+                            <p class="action">
+                                Scrivi "Il mio terzo paragrafo" all'interno dei due tag e salva.
+                            </p>
+                            <p>
+                                Dovrebbe venire una cosa così
+                            </p>
+                            <p class="code">
+                                <pre>[...]
+
+
+&lt;p&gt;Questo è un nuovo paragrafo&lt;/p&gt;
+
+&lt;p&gt;
+    Il mio terzo paragrafo
+&lt;/p&gt;
+
+&lt;/body&gt;
+[...]</pre>
+                            </p>
+                            <p>
+                                Ma se guardiamo l'anteprima...
+                            </p>
+                            <img class="img-portfolio img-responsive" src="img/screenshots/Atom_paragraph_spaces.jpg" />
+                            <p>
+                                Cosa succede? Funziona anche se ci sono gli "a capo"? Ebbene sì, ecco un'altra regola di HTML, ovvero <b>gli "a capo" sono completamente ignorati</b>!
+                            </p>
+                            <p class="action">
+                                Prova ad inserire qualche "a capo" tra "terzo" e "paragrafo", salva e vedi cosa succede.
+                            </p>
+                            <hr class="small">
+                            <p>
+                                Abbiamo finito la prima parte del tutorial. Direi che di cose ne hai imparate! Facciamo un velocissimo elenco, giusto per vedere se ti ricordi tutto. Abbiamo imparato
+                                <ul>
+                                    <li>cosa è e cosa fa un <b>browser</b></li>
+                                    <li>cosa è e cosa fa un <b>editor</b></li>
+                                    <li>cosa sia il <b>codice</b></li>
+                                    <li>chi cavolo è l'<b>HTML</b></li>
+                                    <li>il significato oscuro della parola <b>refresh</b></li>
+                                    <li>l'altrettanto oscuro significato della parola <b>rendering</b></li>
+                                    <li>che esistono altri linguaggi chiamati <b>CSS</b> e <b>JavaScript</b></li>
+                                    <li>come è fatto un <b>tag</b> e cosa fa nella vita</li>
+                                    <li>che si può risparmiare fatica con la <b>preview</b> e con <b>l'autocompletamento</b>!</li>
+                                    <li>che gli "a capo" all'HTML non piacciono proprio</li>
+                                </ul>
+                            </p>
+                        </div>
+                    </div>
+                    <!-- /.col-lg-10 -->
+                </div>
+                <!-- /.row -->
+            </div>
+            <!-- /.container -->
+        </section>
+
+        <!-- Call to Action -->
+        <aside class="call-to-action bg-primary">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12 text-center">
+                        <h3>Pronto per andare avanti?</h3>
+                        <a href="part2.html" class="btn btn-lg btn-light">Sì! Ho capito tutto voglio andare avanti</a>
+                        <a href="index.html" class="btn btn-lg btn-dark">Mi sono perso! Fammi tornare alla prima pagina...</a>
+                    </div>
+                </div>
+            </div>
+        </aside>
+
+        <!-- Footer -->
+        <footer>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-10 col-lg-offset-1 text-center">
+                        <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-sa/4.0/88x31.png" /></a><br />This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Attribution-ShareAlike 4.0 International License</a>.
+                        <p class="text-muted">Copyright &copy; CoderDojo MISO 2014</p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+        <!-- jQuery -->
+        <script src="js/jquery.js"></script>
+
+        <!-- Bootstrap Core JavaScript -->
+        <script src="js/bootstrap.min.js"></script>
+
+        <!-- Custom Theme JavaScript -->
+        <script>
+    // Closes the sidebar menu
+    $("#menu-close").click(function(e) {
+        e.preventDefault();
+        $("#sidebar-wrapper").toggleClass("active");
+    });
+
+    // Opens the sidebar menu
+    $("#menu-toggle").click(function(e) {
+        e.preventDefault();
+        $("#sidebar-wrapper").toggleClass("active");
+    });
+
+    // Scrolls to the selected menu item on the page
+    $(function() {
+        $('a[href*=#]:not([href=#])').click(function() {
+            if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') || location.hostname == this.hostname) {
+
+                var target = $(this.hash);
+                target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+                if (target.length) {
+                    $('html,body').animate({
+                        scrollTop: target.offset().top
+                    }, 1000);
+                    return false;
+                }
+            }
+        });
+    });
+</script>
+
+</body>
+
+</html>
