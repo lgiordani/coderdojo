@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>HTML Adventure v##version## - Parte 4</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="css/stylish-portfolio.css" rel="stylesheet">
+
+    <!-- Custom Fonts -->
+    <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+        <![endif]-->
+
+    </head>
+
+    <body>
+
+        <!-- Callout -->
+        <header class="header part4">
+            <div class="text-vertical-center">
+                <h1>Parte IV</h1>
+                <h3>La sezione segreta</h3>
+            </div>
+        </header>
+
+        <section id="portfolio" class="portfolio">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2 text-center">
+                        <div class="row">
+                            <p>
+                                Questa è l'ultima sezione del lavoro di oggi, e vogliamo farti fare alcuni passi un po' più avanzati, così da farti venire voglia di tornare la prossima volta!
+                            </p>
+                            <p>
+                                Come ti sei sicuramente accorto, le pagine HTML dell'avventura che abbiamo scritto e che tu hai completato non sono proprio bellissime, sembrano un po' vuote con tutto quello spazio bianco. Insomma, sarebbe bello poterle rendere un po' più interessanti esteticamente, no?
+                            </p>
+                            <p>
+                                Entra in scena il secondo linguaggio di cui parlavamo, chiamato <b>CSS</b>, che sta per <b>Cascading Style Sheets</b>, "fogli di stile a cascata". Per ora lasciamo stare cosa significhi "a cascata" e concentriamoci sul significato di "fogli di stile". Il linguaggio CSS ci permette di descrivere lo "stile" degli elementi HTML, ovvero tutte le cose come il colore, la dimensione, lo sfondo, la posizione nella pagina, eccetera.
+                            </p>
+                            <p>
+                                In questa sezione quindi ti insegnamo ad inserire un foglio di stile nella pagina HTML e a cambiare alcune proprietà. La prossima volta faremo un lavoro un po' più approfondito sui CSS, per questa volta vediamo solamente le cose basilari.
+                            </p>
+                            <p>
+                                Prima di tutto assicurati di avere i file dell'avventura che abbiamo scritto nella Parte 3. Se hai seguito le indicazioni che ti abbiamo dato precedentemente, i link che hai messo nelle pagine sono contenuti in una lista non ordinata. Se non lo hai fatto fallo ora, è molto importante per il risultato finale; se non ti ricordi come fare o se sei insicuro chiedi ad un mentor di aiutarti.
+                            </p>
+                            <p>
+                                Ora apri nell'editor il primo file della tua avventura (quello dal nome <code>01.html</code> nella cartella del tipo di ambientazione che hai scelto), e inserisci il foglio di stile che abbiamo preparato per te.
+                            </p>
+                            <p class="action">
+                                Nella parte iniziale del file, subito prima del tag <code>&lt;/head&gt;</code> inserisci il codice<br> <code>&lt;link href="../css/style.css" rel="stylesheet" /&gt;</code>.
+                            </p>
+                            <p>
+                                Come vedi è un nuovo tipo di tag (<code>&lt;link&gt;</code>) che serve proprio ad inserire un link invisibile ad un altro file, che in questo caso si chiama <code>style.css</code>, poi lo apriremo e lo modificheremo un po'. Come vedi, inoltre, c'è l'indicazione <code>stylesheet</code> che indica proprio che si tratta di un foglio di stile. Il tag <code>&lt;link&gt;</code> è un tag vuoto proprio come <code>&lt;img&gt;</code> ed infatti lo abbiamo scritto con la notazione abbraviata.
+                            </p>
+                            <p>
+                                 Vogliamo vedere l'effetto di questa aggiunta?
+                            </p>
+                            <p class="action">
+                                Apri nel browser la prima pagina dell'avventura e... meraviglia! È tutto molto più bello, no? Se è tutto uguale a prima abbiamo sbagliato qualcosa, ricontrolla o chiedi ad un mentor di darti una mano.
+                            </p>
+                            <p>
+                                Come è possibile che una singola riga di codice faccia tutto questo? Beh, come abbiamo detto sopra il tag <code>&lt;link&gt;</code> inserisce un altro file, quindi ora andiamo a cercarlo.
+                            </p>
+                            <p class="action">
+                                Nell'editor premi <b>Ctrl+O</b> e scegli di aprire il file <b>##base_dir##/part3/css/style.css</b>.
+                            </p>
+                            <p>
+                                Bene, questo che vedi è il linguaggio <b>CSS</b>. Come vedi è abbastanza uniforme, e se noti, ci sono i nomi dei tag HTML all'inizio delle varie <b>sezioni</b> (cioè le parti delimitate dalle parentesi graffe). Oggi non possiamo vedere tutto, ma iniziamo a fare una modifica e a vedere cosa succede. Se torni sul file <code>01.html</code> che hai aperto prima noterai che la frase "La mia avventura" è inclusa in un tag <code>&lt;h1&gt;</code>, giusto? Bene, allora se vogliamo cambiare lo <b>stile</b> di questa parte dobbiamo andare nel file CSS e cercare se ci sono delle indicazioni per il tag <code>h1</code>. In effetti alla riga 20 del file CSS c'è proprio scritto <code>h1 {</code> seguito da alcune righe di comandi che per ora non conosciamo ancora, e alla riga 27 c'è la parentesi graffa che chiude la sezione.
+                            </p>
+                            <p>
+                                Alla riga 23 troviamo l'indicazione <code>color: white;</code>, che, come dice il nome stesso, definisce il colore del contenuto del tag <code>&lt;h1&gt;</code>, quindi, per quanto ci riguarda, la frase "La mia avventura". Prima di addentrarci nelle spiegazioni tecniche proviamo a fare una modifica veloce.
+                            </p>
+                            <p class="action">
+                                Nell'editor apri il file <b>style.css</b> e cambia alla riga 23 il codice <code>color: white;</code> in <code>color: yellow;</code>. Poi vai sul browser e aggiorna la pagina. Cosa è successo? Se tutto è andato bene la frase "La mia avventura" è diventata gialla!
+                            </p>
+                            <p>
+                                Perché la modifica che abbiamo fatto ha cambiato il colore della scritta da bianco a giallo? Ha cambiato il colore perché la <b>regola</b> è <code>color:</code> e quindi indica il colore del testo. Il colore è poi indicato dal nome <code>white</code> (bianco, in inglese). Quando abbiamo sostituito il codice con l'indicazione <code>yellow</code> abbiamo indicato che il colore della scritta è per l'appunto giallo (<i>yellow</i> in inglese).
+                            </p>
+                            <hr class="small">
+                            <p>
+                                Anche questa parte, per oggi è finita. Rimane ancora tantissimo da imparare, sia per il linguaggio HTML sia per il linguaggio CSS, ma ci sarà tempo nei prossimi incontri. Per ora facciamo un ripasso veloce di quello che abbiamo visto in questa ultima parte. Abbiamo imparato
+                                <ul>
+                                    <li>cosa sia il linguaggio CSS e a cosa serva</li>
+                                    <li>come inserire un file CSS all'interno di un file HTML in modo che si applichi lo stile</li>
+                                    <li>che il file CSS è diviso in <b>sezioni</b> e che queste contengono delle <b>regole</b></li>
+                                    <li>come cambiare il colore del testo</li>
+                                    <li>come si dice bianco e giallo in inglese (il giallo è importante, soprattutto per i semafori)</li>
+                                </ul>
+                            </p>
+                        </div>
+                    </div>
+                    <!-- /.col-lg-10 -->
+                </div>
+                <!-- /.row -->
+            </div>
+            <!-- /.container -->
+        </section>
+
+        <!-- Call to Action -->
+        <aside class="call-to-action bg-primary">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12 text-center">
+                        <h3>Questa volta siamo veramente alla fine!</h3>
+                        <a href="index.html" class="btn btn-lg btn-light">Torna all'inizio</a>
+                    </div>
+                </div>
+            </div>
+        </aside>
+
+        <!-- Footer -->
+        <footer>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-10 col-lg-offset-1 text-center">
+                        <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-sa/4.0/88x31.png" /></a><br />This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Attribution-ShareAlike 4.0 International License</a>.
+                        <p class="text-muted">Copyright &copy; CoderDojo MISO 2014</p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+        <!-- jQuery -->
+        <script src="js/jquery.js"></script>
+
+        <!-- Bootstrap Core JavaScript -->
+        <script src="js/bootstrap.min.js"></script>
+
+        <!-- Custom Theme JavaScript -->
+        <script>
+    // Closes the sidebar menu
+    $("#menu-close").click(function(e) {
+        e.preventDefault();
+        $("#sidebar-wrapper").toggleClass("active");
+    });
+
+    // Opens the sidebar menu
+    $("#menu-toggle").click(function(e) {
+        e.preventDefault();
+        $("#sidebar-wrapper").toggleClass("active");
+    });
+
+    // Scrolls to the selected menu item on the page
+    $(function() {
+        $('a[href*=#]:not([href=#])').click(function() {
+            if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') || location.hostname == this.hostname) {
+
+                var target = $(this.hash);
+                target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+                if (target.length) {
+                    $('html,body').animate({
+                        scrollTop: target.offset().top
+                    }, 1000);
+                    return false;
+                }
+            }
+        });
+    });
+</script>
+
+</body>
+
+</html>

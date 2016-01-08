@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>HTML Adventure v##version## - Parte 3</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="css/stylish-portfolio.css" rel="stylesheet">
+
+    <!-- Custom Fonts -->
+    <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+        <![endif]-->
+
+    </head>
+
+    <body>
+
+        <!-- Callout -->
+        <header class="header part3">
+            <div class="text-vertical-center">
+                <h1>Parte III</h1>
+                <h3>Inizia l'avventura!</h3>
+            </div>
+        </header>
+
+        <section id="portfolio" class="portfolio">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2 text-center">
+                        <div class="row">
+                            <p>
+                                Ora finalmente costruiremo il nostro gioco! Un'avventura testuale si compone di diverse pagine collegate tra loro tramite scelte che il giocatore può fare. A seconda delle scelte la storia può procedere in un modo o in un altro, finire bene o finire male!
+                            </p>
+                            <p>
+                                Noi abbiamo preparato alcuni file per farti iniziare a lavorare, ma oggi costruirai tu la tua avventura!
+                            </p>
+                            <p>
+                                Per prima cosa decidi che ambientazione preferisci. Ne abbiamo preparate alcune:
+                            </p>
+                            <ul>
+                                <li><b>Avventura</b> - qualcosa tipo Indiana Jones</li>
+                                <li><b>Fantasy</b> - mai visto "Il Signore degli Anelli"?</li>
+                                <li><b>Fantascienza</b> - avventure tra alieni nello spazio, occhio che mordono!</li>
+                            </ul>
+                            <p>
+                                Nel browser, dentro <b>HTML Adventure</b> trovi un segnalibro per ciascuna di queste ambientazioni, se vuoi cliccaci sopra e leggi l'inizio di ciascuna, così vedrai se ce n'è almeno una che ti piace. Speriamo! Iniziamo a fare un po' di pulizia nell'editor.
+                            </p>
+                            <p class="action">
+                                Chiudi le finestre dell'editor su cui abbiamo lavorato finora. Un modo veloce per farlo è scegliere nel menu <b>File</b> l'opzione <b>Closa All Tabs</b> (chiudi tutte le linguette). Poi nella barra di sinistra clicca con il tasto destro su <b>part2</b> e scegli <b>Remove Project Folder</b>.
+                            </p>
+                            <p>
+                                Adesso apri il progetto relativo all'ambientazione che hai scelto
+                            </p>
+                            <p class="action">
+                                Nel menu <b>Packages</b> seleziona <b>Project Manager > List Projects</b>. I progetti di questa parte si chiamano tutti con un nome che inizia con <b>HTML Adventure Part 3</b>. Apri quello che preferisci.
+                            </p>
+                            <p>
+                                Siccome lavoreremo con molti link sarà meglio utilizzare il browser per controllare quello che facciamo.
+                            </p>
+                            <p class="action">
+                                Nel browser dove stai leggendo questo tutorial, nella barra dei segnalibri, trovi <b>HTML Adventure</b> e dentro ci sono i segnalibri relativi alla parte 3 (iniziano tutti con <b>Parte 3</b>, per l'appunto). Clicca con il tasto destro su quello che hai scelto e seleziona <b>Apri in una nuova scheda</b>. Ricordati che qui per vedere le prossime modifiche che salverai dovrai premere <b>F5</b>.
+                            </p>
+                            <p>
+                                Dentro il progetto che hai aperto nell'editor trovi già 6 file HTML numerati dall'1 al 6 (<code>01.html</code>, <code>02.html</code> e così via) e una cartella di immagini chiamata <code>images</code>. Nelle pagine HTML ci sono i pezzi di una storia che abbiamo iniziato a scrivere per te.
+                            </p>
+                            <p>
+                                Guarda lo schema qui sotto, ce n'è uno per ogni ambientazione. Questo è il modo in cui devono essere connesse le pagine che ti abbiamo fornito, quindi il tuo primo compito è quello di aprire i file e inserire i link giusti secondo lo schema. Se non ti ricordi come fare i link torna pure alla <b>Parte 2</b> dove c'è scritto tutto. Nello schema trovi anche il testo da inserire nei link: siccome è molto importante ne abbiamo stampati alcuni, chiedi ad uno dei mentor di darti una copia. Mi raccomando, inserisci i link dentro una lista non ordinata (tag <code>&lt;ul&gt;</code>).
+                            </p>
+                            <p>
+                                Le pagine sono un po' vuote così... perché già che ci sei non inserisci una delle immagini che trovi nella cartella <b>images</b>? Siccome le immagini che ti abbiamo dato sono un po' grandi dovrai cambiare un po' il tag <code>&lt;img&gt;</code>. Guarda nel file <code>01.html</code>, lì c'è inserita un'immagine e puoi copiare quel codice lì!
+                            </p>
+                            <p>
+                                In cosa cambia questo tag <code>img</code>? Se apri il file <code>01.html</code> vedrai come l'abbiamo scritto.
+                            </p>
+                            <p class="code">
+                                <pre>
+&lt;img src="images/campfire.jpg" width="auto" height="400" /&gt;</pre>
+                            </p>
+                            <p>
+                                Siccome le immagini sono molto grandi vogliamo specificare la dimensione, in modo che non escano dalla pagina. Il modo migliore per farlo è di usare il linguaggio <b>CSS</b>, ma siccome non lo conosciamo ancora ci limitiamo a specificare la dimensione dell'immagine nel tag, usando gli attributi <b>width</b> (larghezza) e <b>height</b> (altezza). In questo caso impostiamo l'altezza a 400 pixel e lasciamo che la larghezza si sistemi automaticamente (<code>auto</code>), così l'immagine non viene deformata.
+                            </p>
+                            <p class="action">
+                                Connetti tra loro tutti i file dall'1 al 6 secondo lo schema, e inserendo le immagini che preferisci. Una volta inseriti tutti i link verifica che sia tutto a posto e che l'avventura sia percorribile. Quando hai finito torna qui.
+                            </p>
+                            <hr class="small">
+                            <p>
+                                Noterai che la stanza numero 6 riporta la scritta <b>Inizia l'avventura!</b>. Qui tocca a te, aggiungi le pagine che vuoi, usando alcune delle immagini che ti abbiamo fornito. Inventati tu la storia, magari partendo dalle immagini che ti abbiamo fornito. Aggiungi delle scelte nelle stanze, sono quello che rende l'avventura interessante! Controlla però che tutti link funzionino! Ti consigliamo di dare un'occhiata alle immagini disponibili e farti guidare da quelle per immaginare la tua avventura.
+                            </p>
+                            <p>
+                                Ora ti facciamo vedere come creare una nuova stanza
+                            </p>
+                            <p class="action">
+                                Apri la pagina <code>06.html</code> nell'editor, premi <b>Ctrl + A</b> per selezionare tutto e poi <b>Ctrl + C</b> per copiare tutto il testo. Poi premi <b>Ctrl + N</b> per creare un nuovo file (oppure seleziona il menu <b>File -> New File</b>) e dentro il nuovo file premi <b>Ctrl + V</b> per incollare tutto il testo. Adesso premi <b>Ctrl + S</b> per salvarlo e dagli il nome <code>07.html</code>. Ora nell'editor modifica il testo della pagina, inserisci l'immagine che vuoi e i link che preferisci. Questa procedura vale per tutte le nuove pagine che vuoi creare.
+                            </p>
+                        </div>
+                    </div>
+                    <!-- /.col-lg-10 -->
+                </div>
+                <!-- /.row -->
+            </div>
+            <!-- /.container -->
+        </section>
+
+        <!-- Call to Action -->
+        <aside class="call-to-action bg-primary">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12 text-center">
+                        <h3>Se sei arrivato fino a qui puoi accedere alla <b>sezione segreta</b>!</h3>
+                        <a href="part4.html" class="btn btn-lg btn-light">Ci vado subito!</a>
+                        <a href="index.html" class="btn btn-lg btn-dark">Mi sa che non c'è più tempo e mi tocca smettere!</a>
+                    </div>
+                </div>
+            </div>
+        </aside>
+
+        <!-- Footer -->
+        <footer>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-10 col-lg-offset-1 text-center">
+                        <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-sa/4.0/88x31.png" /></a><br />This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Attribution-ShareAlike 4.0 International License</a>.
+                        <p class="text-muted">Copyright &copy; CoderDojo MISO 2014</p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+        <!-- jQuery -->
+        <script src="js/jquery.js"></script>
+
+        <!-- Bootstrap Core JavaScript -->
+        <script src="js/bootstrap.min.js"></script>
+
+        <!-- Custom Theme JavaScript -->
+        <script>
+    // Closes the sidebar menu
+    $("#menu-close").click(function(e) {
+        e.preventDefault();
+        $("#sidebar-wrapper").toggleClass("active");
+    });
+
+    // Opens the sidebar menu
+    $("#menu-toggle").click(function(e) {
+        e.preventDefault();
+        $("#sidebar-wrapper").toggleClass("active");
+    });
+
+    // Scrolls to the selected menu item on the page
+    $(function() {
+        $('a[href*=#]:not([href=#])').click(function() {
+            if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') || location.hostname == this.hostname) {
+
+                var target = $(this.hash);
+                target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+                if (target.length) {
+                    $('html,body').animate({
+                        scrollTop: target.offset().top
+                    }, 1000);
+                    return false;
+                }
+            }
+        });
+    });
+</script>
+
+</body>
+
+</html>

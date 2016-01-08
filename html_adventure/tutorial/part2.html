@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>HTML Adventure v##version## - Parte 2</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="css/stylish-portfolio.css" rel="stylesheet">
+
+    <!-- Custom Fonts -->
+    <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+        <![endif]-->
+
+    </head>
+
+    <body>
+
+        <!-- Callout -->
+        <header class="header part2">
+            <div class="text-vertical-center">
+                <h1>Parte II</h1>
+                <h3>Una questione di collegamenti</h3>
+            </div>
+        </header>
+
+        <section id="portfolio" class="portfolio">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2 text-center">
+                        <div class="row">
+                            <p>
+                                Nel primo esercizio abbiamo incontrato l'HTML, il "linguaggio a marcatori per gli ipertesti". Urca, urca, attenzione. Beh, <b>linguaggio</b> abbiamo capito cosa significa, in pratica è un insieme astruso di parole e simboli che fanno fare qualcosa al computer. I <b>marcatori</b> sono proprio gli elementi del linguaggio, i tag, quei nomi strani circondati dalle parentesi appuntite. Ma questi <b>ipertesti</b>? Niente di complesso, li usiamo tutti i giorni. Gli ipertesti sono dei testi collegati tra loro. Avete presente quando cliccate un <b>link</b> su Internet? Link per l'appunto significa <i>collegamento</i> ed ecco fatto! Tutta Internet è un gigantesco ipertesto.
+                            </p>
+                            <p>
+                                Ma come si fanno i link? Facciamone subito uno, così impariamo in quattro e quattr'otto. Ma prima... un po' di pulizia!
+                            </p>
+                            <p>
+                                Chiudiamo le varie tab che abbiamo aperto, sia quella con l'anteprima che quella con il file HTML.
+                            </p>
+                            <p class="action">
+                                In alto, sotto la barra dei menu, ci sono due linguette. Una con il nome <b>index.html</b> e l'altra con il testo <b>Un'avventura testuale</b> (che è il titolo della pagina nell'anteprima). Se vai con il mouse sulla linguetta comparirà una piccola croce. Premila e la linguetta si chiuderà. Chiudile entrambe. Poi nella barra a sinistra clicca sulla directory <b>part1</b> con il tasto destro e seleziona <b>Remove Project Folder</b>.
+                            </p>
+                            <p>
+                                Ora la finestra dell'editor è totalmente vuota. Adesso, per continuare nel lavoro di oggi, devi aprire un <b>progetto</b>, ovvero un insieme di file che abbiamo già preparato per te, giusto per evitarti di dover passare la giornata a scrivere nell'editor! Siamo o non siamo bravi?
+                            </p>
+                            <p class="action">
+                                Clicca sul menu <b>Packages</b> e scegli <b>Project Manager > List Projects</b>. Poi nel menu che si apre seleziona "HTML Adventure Part 2". Vedrai comparire a sinistra una serie file che useremo. Ecco come si presenterà l'editor.
+                            </p>
+                            <img class="img-portfolio img-responsive" src="img/screenshots/Atom_project_part2.jpg" />
+                            <p>
+                                Bene, torniamo ai nostri link. Apriamo il file <code>01.html</code>.
+                            </p>
+                            <p class="action">
+                                Nella barra a sinistra dell'editor clicca una volta sul file <code>01.html</code>
+                            </p>
+                            <p>
+                                Come vedi è molto simile al file su cui abbiamo lavorato nel primo esercizio, solo che qui c'è un po' più di testo. Leggi pure il testo, così cominciamo ad immedesimarci: come vedi in questo gioco il lettore veste i panni di un agente segreto. Vorremmo che alla fine di questo testo il lettore/giocatore possa <b>muoversi verso un'altra pagina</b>, facendo procedere la storia. Quest'altra parte della storia è nel file <code>02.html</code>
+                            </p>
+                            <p class="action">
+                                Nella barra a sinistra dell'editor clicca una volta sul file <code>02.html</code>
+                            </p>
+                            <p>
+                                Adesso dobbiamo inserire un nuovo tag, che si chiama <b>a</b> (e sta per <i>anchor</i>, àncora, come quella della nave). Questo tag crea un link: contiene l'indirizzo della pagina a cui porta il link e un testo che viene inserito nella pagina. Risulterà una cosa così
+                            </p>
+                            <p class="code">
+                                <pre>[...]
+
+
+    &lt;a href="02.html"&gt;Vai avanti&lt;/a&gt;
+
+&lt;/body&gt;
+[...]</pre>
+                            </p>
+                            <p>
+                                Ricordati che esiste l'autocompletamento, scrivi <code>a</code>, premi <code>TAB</code> e trovi gran parte del lavoro fatto!
+                            </p>
+                            <p class="action">
+                                Aggiungi alla fine del file <code>01.html</code> (attenzione, prima del tag <code>&lt;/body&gt;</code>) il codice <br><code>&lt;a href="02.html"&gt;Vai avanti&lt;/a&gt;</code>
+                            </p>
+                            <p>
+                                Riattiva l'anteprima (tasto destro del mouse, poi seleziona <b>Preview-Plus</b> dal menu). Cosa è successo nella pagina? È spuntato fuori un link, e quando lo clicchi... zac! Eccoci alla pagina <code>02.html</code>! Mmmmm, ne siamo sicuri? Beh, controlliamo nel file <code>02.html</code> che abbiamo già aperto... sembra proprio lui, no?
+                            </p>
+                            <p>
+                                Accidenti, c'è un problema! Come facciamo a tornare alla pagina 1? La pagina 2 non contiene alcun link, ci siamo persi nella foresta di Internet! Aiuuuuuutooooo!
+                            </p>
+                            <p>
+                                Calma, calma. Noi sappiamo come fare un link, no?
+                            </p>
+                            <p class="action">
+                                Inserisci nella pagina 2 un link alla pagina 1, esattamente come abbiamo fatto prima. Attenzione ad inserire il link prima del tag di chiusura <code>&lt;/body&gt;</code>. Suggerimento: copia il tag dal file <code>01.html</code> e cambia le parti necessarie. Per copiarlo basta evidenziarlo con il mouse, premere <b>Ctrl+C</b>, andare dove vuoi inserirlo e premere <b>Ctrl+V</b>.
+                            </p>
+                            <p>
+                                Ricordati che l'anteprima non si aggiorna automaticamente a meno che non sia attivo il simbolino del fulmine. Come vedi quando si tratta di link l'anteprima nell'editor non funziona perfettamente, quindi sarà meglio tornare al browser vero e proprio.
+                            </p>
+                            <p class="action">
+                                Nel browser dove stai leggendo questo tutorial, nella barra dei segnalibri, trovi <b>HTML Adventure</b> e dentro c'è <b>Parte 2</b>. Clicca con il tasto destro e seleziona <b>Apri in una nuova scheda</b>. Ricordati che qui per vedere le prossime modifiche che salverai dovrai premere <b>F5</b>.
+                            </p>
+                            <p>
+                                Ottimo, ora possiamo andare avanti e indietro tra le nostre due pagine!
+                            </p>
+                            <p>
+                                Ma... mettiamo che da una pagina ci siano più possibilità di scelta su dove andare. È possibile mettere due link, ad esempio?
+                            </p>
+                            <p class="action">
+                                Metti nella pagina <code>01.html</code> un link alla pagina <code>03.html</code> con il testo "Vai in fondo". Cosa succede? È possibile metterlo su due righe diverse, per esempio mandando a capo il tag?
+                            </p>
+                            <p>
+                                Come hai visto anche se metti i tag <code>&lt;a&gt;</code> su righe diverse l'HTML se ne infischia e li mette uno dietro l'altro! Le uniche cose che stanno su due righe diverse in HTML sono i paragrafi (quelli che abbiamo già fatto con il tag <code>&lt;p&gt;</code>). Quindi se fosse possibile mettere un link dentro un paragrafo... È possibile mettere un tag dentro l'altro? Per esempio una cosa così
+                            </p>
+                            <p class="code">
+                                <pre>
+&lt;p&gt;&lt;a href="02.html"&gt;Vai avanti&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href="03.html"&gt;Vai in fondo&lt;/a&gt;&lt;/p&gt;</pre>
+
+                            </p>
+                            <p>
+                                L'idea è che ogni paragrafo contiene un link. Beh, proviamo a vedere se funziona!
+                            </p>
+                            <p class="action">
+                                Prova a mettere il tag <code>&lt;a&gt;</code> dentro un tag <code>&lt;p&gt;</code> come mostrato qui sopra. Attenzione i due tag <code>&lt;p&gt;</code> e <code>&lt;/p&gt;</code> devono contenere completamente i due tag <code>&lt;a&gt;</code> e <code>&lt;/a&gt;</code>!
+                            </p>
+                            <p>
+                                Controlla un po' sul browser cosa succede (ricordati F5)... eccoli! I link adesso sono su due righe diverse, perfetto! Quello che abbiamo fatto si chiama <b>annidare</b> i tag, ovvero metterli uno dentro l'altro, perché il tag esterno diventa come un nido per quello interno (certo che questi programmatori sono gente veramente strana).
+                            </p>
+                            <hr class="small">
+
+                            <p>
+                                Una cosa molto comoda da avere quando si scrivono i testi sono le <b>liste</b> e nel Web ci sono liste ovunque, anche se spesso non ce ne accorgiamo. Ad esempio i menu delle pagine come Facebook o Google, i pulsanti in alto, tutte le mail che ci sono nella casella di posta... tutte liste!
+                            </p>
+                            <p>
+                                Cominciamo a vedere una semplice lista. Il tag HTML che useremo è <code>&lt;ul&gt;</code>, dentro il quale metteremo dei tag <code>&lt;li&gt;</code>. Per esempio
+                            </p>
+                            <p class="code">
+                                <pre>
+&lt;ul&gt;
+  &lt;li&gt;Elemento 1&lt;/li&gt;
+  &lt;li&gt;Elemento 2&lt;/li&gt;
+&lt;/ul&gt;
+</pre>
+
+                            </p>
+                            <p>
+                                Proviamo a scriverlo e vediamo cosa viene fuori!
+                            </p>
+                            <p class="action">
+                                Inserisci il codice qui sopra nella pagina <code>01-html</code> e verifica cosa produce nell'anteprima o nel browser.
+                            </p>
+                            <p>
+                                Come vedi la lista produce un cosiddetto "elenco puntato", infatti <code>ul</code> sta per <b>unordered list</b> (lista non ordinata), chiamata così perché gli elementi non hanno un ordine particolare. Cosa succede se utilizziamo il tag <code>&lt;ol&gt;</code> invece di <code>&lt;ul&gt;</code>?
+                            </p>
+                            <p class="action">
+                                Sostituisci nella tua lista i tag <code>&lt;ul&gt;</code> con i tag <code>&lt;ol&gt;</code>. Attenzione, sia quelli di apertura che quelli di chiusura!
+                            </p>
+                            <p>
+                                Bene, come vedi <code>ol</code> sta per <b>ordered list</b> (lista ordinata). A prescindere dal tipo di lista gli elementi interni sono sempre contenuti nei tag <code>&lt;li&gt;</code>. Ma dentro la lista ci può stare qualsiasi cosa? Proviamo un po' ad esempio, a metterci i nostri link.
+                            </p>
+                            <p class="action">
+                                Apri il file <code>01.html</code>, crea una lista <b>non ordinata </b> e dentro la lista metti i due link creati precedentemente. Un suggerimento: ogni elemento della lista sta dentro i tag <code>&lt;li&gt;</code> e ogni link sta dentro il tag <code>&lt;a&gt;</code>. Non ti servono più i tag <code>&lt;p&gt;</code>! Salva e verifica cosa succede.
+                            </p>
+                            <p>
+                                Vediamo, alla fine dovrebbe esserti venuta una cosa così
+                            </p>
+                            <p class="code">
+                                <pre>
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href="02.html"&gt;Vai avanti&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="03.html"&gt;Vai in fondo&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</pre>
+
+                            </p>
+                            <p>
+                                Adesso i link sono in una bella lista, ognuno su una riga. Per ora ci fermiamo qui con le liste, ma come ti abbiamo detto ne vedremo ancora tantissime. Dovrai aspettare di imparare il libguaggio <b>CSS</b>, però, per imparare a fare veramente delle cose eccezionali con le liste.
+                            </p>
+                            <hr class="small">                            
+                            <p>
+                                Sarebbe ora di rendere la cosa un po' più bellina graficamente, non ti pare? Aggiungiamo <b>un'immagine</b>! Ne abbiamo preparata una bellissima che si trova nella cartella <code>images</code> dentro la cartella <code>part2</code> del progetto, si chiama <code>adventure.jpg</code>. Atom permette anche di vedere le immagini, quindi se ci clicchi sopra puoi ammirarla subito.
+                            </p>
+                            <p class="action">
+                                Vai in Atom e sulla barra a sinistra apri la cartela <code>images</code> e clicca sul file <code>adventure.jpg</code>.
+                            </p>
+                            <p>
+                                Dovrebbe essere questa
+                            </p>
+                            <img class="img-portfolio img-responsive" src="img/adventure.jpg" />
+                            <p>
+                                Per inserirla nalla pagina Web usiamo il tag <code>&lt;img&gt;</code>. Questo è un tag un po' particolare. Ti abbiamo detto prima che tutti i tag HTML vanno aperti e chiusi per poterci mettere dentro un contenuto. Beh ecco, non era proprio tutta tutta la verità.
+                            </p>
+                            <p>
+                                Il tag <code>img</code> va aperto e chiuso come tutti, ma non ci si mette dentro nulla come contenuto! Il file che contiene l'immagine si mette in quello che si chiama <b>attributo</b>, in particolare l'attributo <code>src</code>. Allora, facciamo un passo alla volta
+                            </p>
+                            <p class="action">
+                                Nella pagina <code>01.html</code> metti dopo la chiusura del tag <code>h1</code> il codice <br><code>&lt;img src="images/adventure.jpg" /&gt;</code>
+                            </p>
+                            <p>
+                                Bene, quello che inizia con <code>src=</code> è l'attributo <code>src</code> che sta per <i>source</i>, sorgente, ovvero da dove prendere l'immagine. Gli attributi sono come delle caratteristiche aggiuntive dei tag e sono importantissimi! Ma questo tag <code>img</code> ha un'altra particolarità: invece di terminare con <code>&gt;</code> termina con <code>/&gt;</code>. Questo perché è un tag vuoto, ovvero andrebbe scritto così
+                            </p>
+                            <p class="code">
+                                <pre>
+&lt;img src="images/adventure.jpg"&gt;&lt;/img&gt;</pre>
+
+                            </p>
+                            <p>
+                                ma l'HTML ci permette di accorciare la scrittura. Siccome tra <code>&lt;img&gt;</code> e <code>&lt;/img&gt;</code> non c'è nulla possiamo fare tutto con <code>&lt;img /&gt;</code>. Un po' come scrivere "ecc" invece di "eccetera". Adesso la nostra pagina si dovrebbe presentare così (a parte i vari link e le liste che hai aggiunto prima)
+                            </p>
+                            <img class="img-portfolio img-responsive" src="img/screenshots/part2_with_image.jpg" />
+                            <hr class="small">
+                            <p>
+                                Siamo arrivati alla fine anche della seconda parte!!! Beh, allora che ne dici, stiamo imparando delle cose nuove? E devi vedere cosa ci aspetta! Per adesso facciamo un mini riassunto di cosa è successo finora. In questa lezione abbiamo imparato
+                                <ul>
+                                    <li>che l'editor può raggruppare i file in <b>progetti</b></li>
+                                    <li>che l'<b>ipertesto</b> non è un'arma a raggi laser</li>
+                                    <li>che i <b>link</b> che clicchiamo tutti i giorni sono facili da fare</li>
+                                    <li>che i tag di possono <b>annidare</b> e che questo non ha niente a che fare con le rondini</li>
+                                    <li>che il mondo è pieno di <b>liste</b>!</li>
+                                    <li>che esistono <b>liste ordinate</b> e <b>liste non ordinate</b> (non "disordinate"!)</li>
+                                    <li>che il tag <code>&lt;img&gt;</code> è un furbacchione che si comporta diversamente dagli altri, ma ci permette di inserire delle <b>immagini</b></li>
+                                </ul>
+                            </p>
+                        </div>
+                    </div>
+                    <!-- /.col-lg-10 -->
+                </div>
+                <!-- /.row -->
+            </div>
+            <!-- /.container -->
+        </section>
+
+        <!-- Call to Action -->
+        <aside class="call-to-action bg-primary">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12 text-center">
+                        <h3>Stiamo andando a gonfie vele, ora facciamo un salto avanti!</h3>
+                        <a href="part3.html" class="btn btn-lg btn-light">Non vedo l'ora! Voglio imparare ancora!</a>
+                        <a href="index.html" class="btn btn-lg btn-dark">Sono proprio stufo! Torniamo all'inizio.</a>
+                    </div>
+                </div>
+            </div>
+        </aside>
+
+        <!-- Footer -->
+        <footer>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-10 col-lg-offset-1 text-center">
+                        <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-sa/4.0/88x31.png" /></a><br />This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Attribution-ShareAlike 4.0 International License</a>.
+                        <p class="text-muted">Copyright &copy; CoderDojo MISO 2014</p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+        <!-- jQuery -->
+        <script src="js/jquery.js"></script>
+
+        <!-- Bootstrap Core JavaScript -->
+        <script src="js/bootstrap.min.js"></script>
+
+        <!-- Custom Theme JavaScript -->
+        <script>
+    // Closes the sidebar menu
+    $("#menu-close").click(function(e) {
+        e.preventDefault();
+        $("#sidebar-wrapper").toggleClass("active");
+    });
+
+    // Opens the sidebar menu
+    $("#menu-toggle").click(function(e) {
+        e.preventDefault();
+        $("#sidebar-wrapper").toggleClass("active");
+    });
+
+    // Scrolls to the selected menu item on the page
+    $(function() {
+        $('a[href*=#]:not([href=#])').click(function() {
+            if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') || location.hostname == this.hostname) {
+
+                var target = $(this.hash);
+                target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+                if (target.length) {
+                    $('html,body').animate({
+                        scrollTop: target.offset().top
+                    }, 1000);
+                    return false;
+                }
+            }
+        });
+    });
+</script>
+
+</body>
+
+</html>
