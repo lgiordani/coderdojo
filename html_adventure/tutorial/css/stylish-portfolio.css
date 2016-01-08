@@ -262,6 +262,20 @@ hr.small {
     text-align: center;
 }
 
+.portfolio p.quote {
+    border-size: 1px;
+    border-radius: 25px;
+    background: #90AAFF;
+    padding: 20px;
+    text-align: center;
+    font-size: 25px;
+    font-style: italic;
+}
+
+.portfolio p.quote span.source {
+    font-size: 13px;
+}
+
 .portfolio pre {
     font-family: "Courier New", Courier, monospace;
     font-size: 16px;

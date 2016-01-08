@@ -1,8 +1,9 @@
 #!/bin/bash
 
+no_atom=$(echo $@ | grep -Eo "no_atom")
 version=$(cat version.txt)
 
-if [[ -z $(which atom) ]]; then
+if [[ -z $(which atom) && -z ${no_atom} ]]; then
     echo "Installing the Atom editor, please provide the root password when asked."
     sudo add-apt-repository ppa:webupd8team/atom
     sudo apt-get update
@@ -12,16 +13,18 @@ fi
 coderdojo_dir=${HOME}/coderdojo
 html_adventure_dir=${coderdojo_dir}/html_adventure
 
-echo "Installing Atom packages..."
-apm_install_list=""
-for i in linter linter-htmlhint browser-plus preview-plus project-manager; do
-    if [[ -z $(apm list -ib | grep -E "${i}@") ]]; then
-        echo "  * ${i}"
-        apm_install_list="${apm_install_list} ${i}"
+if [[ -z ${no_atom} ]]; then
+    echo "Installing Atom packages..."
+    apm_install_list=""
+    for i in linter linter-htmlhint browser-plus preview-plus project-manager; do
+        if [[ -z $(apm list -ib | grep -E "${i}@") ]]; then
+            echo "  * ${i}"
+            apm_install_list="${apm_install_list} ${i}"
+        fi
+    done
+    if [[ ! -z ${apm_install_list} ]]; then
+        apm install ${apm_install_list}
     fi
-done
-if [[ ! -z ${apm_install_list} ]]; then
-    apm install ${apm_install_list}
 fi
 
 if [[ ! -d ${coderdojo_dir} ]]; then
@@ -50,13 +53,15 @@ for i in $(find ${html_adventure_dir} -iname "*.html"); do
     mv ${i}.tmp ${i}
 done
 
-echo
-echo "Creating Atom projects list..."
-cat "installer/projects.cson" | sed -r -e s,"##base_dir##","${html_adventure_dir}", > ~/.atom/projects.cson
-
-echo
-echo "Configuring Atom..."
-cat "installer/config.cson" >> ~/.atom/config.cson
+if [[ -z ${no_atom} ]]; then
+    echo
+    echo "Creating Atom projects list..."
+    cat "installer/projects.cson" | sed -r -e s,"##base_dir##","${html_adventure_dir}", > ~/.atom/projects.cson
+    
+    echo
+    echo "Configuring Atom..."
+    cat "installer/config.cson" >> ~/.atom/config.cson
+fi
 
 echo
 echo "Creating bookmarks file..."

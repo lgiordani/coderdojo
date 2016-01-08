@@ -53,7 +53,7 @@
                             </p>
                             <img class="img-portfolio img-responsive" src="img/screenshots/part1.jpg" />
                             <p>
-                                Beh, questa è una <b>pagina Web</b>. Ok, ok, manca di colori, luci, suoni, animazioni, filmati e quant'altro. Ma è una pagina Web, e ora scopriremo cosa ci sta sotto!
+                                Beh, questa che abbiamo aperto è una <b>pagina Web</b>. Ok, ok, manca di colori, luci, suoni, animazioni, filmati e quant'altro. Ma è una pagina Web, e ora scopriremo cosa ci sta sotto!
                             </p>
                             <p>
                                 Cosa usano i programmatori per fare il loro lavoro (e per divertirsi)? Usano un <b>editor</b> (<i>to edit</i>, modificare), ovvero un programma che serve a scrivere il <b>codice</b>. Apriamo il nostro editor e vediamo di cosa si tratta.
@@ -73,6 +73,16 @@
                                 Urca! Cos'è questo? Una lingua aliena? Benvenuto, questo che vedi è il linguaggio <b>HTML</b> (che è una sigla che vuol dire <b>HyperText Markup Language</b>, ovvero "linguaggio a marcatori per ipertesti"). Ecco questa è proprio una lingua aliena!!! Calma, calma, una cosa alla volta.
                             </p>
                             <p>
+                                Facciamo una citazione utile da un famoso romanzo:
+                            </p>
+                            <p class="quote">
+                                "Non farti prendere dal panico."<br>
+                                <span class="source">Douglas Adams, Guida Galattica per Autostoppisti</span>
+                            </p>
+                            <p>
+                                Rassicurante? Coraggio che con calma si fa tutto.
+                            </p>
+                            <p>
                                 Prima di tutto sistemiamo un poco l'editor, che ci sono troppe cose aperte. Di default Atom apre due pannelli (<i>panes</i>) in parallelo, quindi adesso ne chiudiamo un po'. Vai sulla tab che dice <b>Welcome</b>, clicca con il tasto destro e seleziona <b>Close Pane</b> (chiudi il pannello). Poi clicca con il tasto destro sulla tab che dice <b>index.html</b> e seleziona <b>Close other tabs</b>
                             </p>
                             <img class="img-portfolio img-responsive" src="img/screenshots/Atom_close_pane.jpg" />
@@ -81,7 +91,7 @@
                             </p>
                             <img class="img-portfolio img-responsive" src="img/screenshots/Atom_one_file.jpg" />
                             <p>
-                                Ora torniamo al nostro file: guarda il codice nell'editor e la pagina che hai aperto nella nuova scheda. C'è qualcosa in comune? Ad esempio vedi quella riga dove dice <code>&lt;h1&gt;La mia avventura&lt;/h1&gt;</code> (alla riga 11)? C'è qualcosa di simile anche nella pagina. Facciamo così, proviamo a cambiarla e a vedere cosa succede!
+                                Ora che le cose sono più ordinate torniamo al contenuto nostro file: guarda il codice nell'editor e la pagina che hai aperto nella nuova scheda. C'è qualcosa in comune? Ad esempio vedi quella riga dove dice <code>&lt;h1&gt;La mia avventura&lt;/h1&gt;</code> (alla riga 11)? C'è qualcosa di simile anche nella pagina che hai aperto nel browser? Facciamo così, proviamo a cambiarla e a vedere cosa succede!
                             </p>
                             <p class="action">
                                 Muoviti con i tasti freccia o con il mouse sulla quella riga e modifica il testo <b>La mia avventura</b> per farlo diventare <b>La mia prima avventura!</b>, compreso di punto esclamativo, mi raccomando, altrimenti non è abbastanza entusiasmante!
@@ -140,7 +150,7 @@
                                 Proviamo a vedere cosa succede se facciamo un errore.
                             </p>
                             <p class="action">
-                                Andiamo nel nostro file e cambiamo il tag <code>&lt;h1&gt;</code> in <code>&lt;h2&gt;</code> (solo questo, lasciamo <code>&lt;/h1&gt;</code> così com'è). Poi salva.
+                                Vai nel file e cambia il tag <code>&lt;h1&gt;</code> in <code>&lt;h2&gt;</code> (solo questo, lascia <code>&lt;/h1&gt;</code> così com'è). Poi salva.
                             </p>
                             <p>
                                 Eccoli lì! I puntini rossi!! Ahi, ahi, qui c'è qualche sbaglio. In basso nella finestra compaiono anche due minacciosi bollini rossi con scritto "error", ma tranquillo, qui non c'è la pagella.
@@ -158,7 +168,7 @@
                                 Come vedi quando salvi tutto torna nella norma. Wow, per fortuna, niente bocciatura! Ora è tempo che impari ad aggiungere qualcosa di tuo.
                             </p>
                             <p class="action">
-                                Vai all'inizio della riga dove c'è scritto <code>&lt;/body&gt;</code> (attenzione, dove si chiude, non dove si apre) e inserisci qualche "a capo" (cioè premi Invio un po' di volte) per farci un po' di spazio (quanti ne vuoi, non costano nulla!). Su una delle righe vuote scrivi <code>&lt;p&gt;</code> (ignoriamo per ora il menu che salta fuori, lo useremo tra un attimo), poi scrivi la frase <b>Questo è un nuovo paragrafo</b> e chiudi il tag con <code>&lt;/p&gt;</code>. Salva e fai il refresh dal browser con <b>F5</b>.
+                                Vai all'inizio della riga dove c'è scritto <code>&lt;/body&gt;</code> (attenzione, dove si chiude, non dove si apre) e inserisci qualche "a capo" (cioè premi <b>Invio</b> un po' di volte) per farci un po' di spazio (quanti ne vuoi, non costano nulla!). Su una delle righe vuote scrivi <code>&lt;p&gt;</code> (ignoriamo per ora il menu che salta fuori, lo useremo tra un attimo), poi scrivi la frase <b>Questo è un nuovo paragrafo</b> e chiudi il tag con <code>&lt;/p&gt;</code>. Salva e fai il refresh dal browser con <b>F5</b>.
                             </p>
                             <p>
                                 Otterrai una cosa simile a questa
@@ -166,6 +176,7 @@
                             <p class="code">
                                 <pre>[...]
 
+&lt;p&gt;Qui inizia la mia avventura!&lt;/p&gt;
 
 &lt;p&gt;Questo è un nuovo paragrafo&lt;/p&gt;
 
