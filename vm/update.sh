@@ -1,7 +1,5 @@
 #!/bin/bash
 
-if [[ ! $(whoami) == "root" ]]; then zenity --error --text "You must be root"; exit 1; fi
-
 if [[ ! $(ping -c 1 -w 2 www.google.com) ]]; then zenity --error --text "Check your internet connection"; exit 1; fi
 
 exec_dir=$(dirname ${BASH_SOURCE})
