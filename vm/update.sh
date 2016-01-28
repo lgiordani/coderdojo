@@ -4,6 +4,9 @@ exec_dir=$(dirname ${BASH_SOURCE})
 registry="${exec_dir}/registry.list"
 log="${exec_dir}/update.log"
 
+if [[ ! -f ${registry} ]]; then touch ${registry}; fi
+if [[ ! -f ${log} ]]; then touch ${log}; fi
+
 echo "(date +%Y%m%d%H%M%S):Execution" >> ${log}
 
 if [[ ! $(ping -c 1 -w 2 www.google.com) ]]; then
@@ -11,8 +14,6 @@ if [[ ! $(ping -c 1 -w 2 www.google.com) ]]; then
     exit 1
     echo "(date +%Y%m%d%H%M%S):Aborted due to missing Internet connection" >> ${log}
 fi
-
-if [[ ! -f ${registry} ]]; then touch ${registry}; fi
 
 for migration in $(find ${exec_dir}/migrations -iname "*.sh" | sort)
 do
