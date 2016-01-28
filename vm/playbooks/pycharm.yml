@@ -1,0 +1,8 @@
+---
+- hosts: all
+  connection: local
+  roles:
+  - { role: tersmitten.pycharm, pycharm_version: '5.0.3', pycharm_edition: 'community' }
+  tasks:
+  - name: Set up PyCharm link
+    action: file src=/opt/pycharm-community-5.0.3/bin/pycharm.sh dest=/home/coderdojo/pycharm.sh state=link
